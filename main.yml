@@ -2,9 +2,9 @@
 - name: Deploy the demo app to OpenShift
   hosts: all
 
-  - tasks:
-      - name: login to the cluster
-        shell: "oc login --token={{ ocp_token }} --server=https://c100-e.au-syd.containers.cloud.ibm.com:32653"
+  tasks:
+    - name: login to the cluster
+      shell: "oc login --token={{ ocp_token }} --server={{ ocp_server }}"
 
-      - name: create the deployment
-        shell: oc create -f deployment.yml
+    - name: create the deployment
+      shell: oc create -f deployment.yml
