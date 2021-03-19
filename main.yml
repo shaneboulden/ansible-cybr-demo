@@ -2,6 +2,9 @@
 - name: Deploy the demo app to OpenShift
   hosts: all
 
+  collections:
+    - community.kubernetes
+
   tasks:
     - name: create the deployment
       community.kubernetes.k8s:
