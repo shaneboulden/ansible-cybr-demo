@@ -2,10 +2,6 @@
 - name: Deploy the demo app to OpenShift
   hosts: all
 
-  collections:
-    - name: kubernetes.core
-      source: https://cloud.redhat.com/api/automation-hub
-
   tasks:
     - name: create the deployment
       kubernetes.core.k8s:
