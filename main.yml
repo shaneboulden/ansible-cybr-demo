@@ -4,7 +4,7 @@
 
   tasks:
     - name: create the deployment
-      kubernetes.core.k8s:
+      community.kubernetes.k8s:
         host: "{{ ocp_server }}"
         api_key: "{{ ocp_token }}"
         state: present
