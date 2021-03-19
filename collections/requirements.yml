@@ -2,3 +2,4 @@
 collections:
   - name: kubernetes.core
     version: 1.2.0
+    source: https://cloud.redhat.com/api/automation-hub/
